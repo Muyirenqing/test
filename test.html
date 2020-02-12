@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+	<title>ol元素列表的使用</title>
+	<link href="Css/css3.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+		function Btn_click(){
+			var strNum = document.getElementById("txtOrderNum").value;
+			var strDiv= document.getElementById("olList");
+			strDiv.setAttribute("start",strNum);
+		}
+	</script>
+	<noscript>您的浏览器不支持JavaScript!</noscript>
+</head>
+<body>
+		<h5>各类图书销量排名<h5>
+		<ol id="olList" >
+			<li>计算机</li>
+			<li>社科</li>
+			<li>文艺</li>
+		</ol>
+		<h5>设置开始值</h5>
+		<input type="text" id="txtOrderNum" class="inputtxt" style="width:60px"/>
+		<input type="button" value="确定" class="inputbtn" onclick="Btn_click();"/>
+		
+		<dl>
+			<dt>HTML5</dt>
+			<dd>在当今时代，无论是前端设计还是WEB开发都应掌握它</dd>
+			<dt>jQuery</dt>
+			<dd>一种非常优秀的WEB开发前端框架</dd>
+		</dl>
+		
+		<!--文本层次语标记 time/mark/cite-->
+		<p id="p1">
+			<time datetime="2018-4-9">
+				今天是2018年7月29日
+			</time>
+		</p>
+		<p id="p2">
+			<time datetime="2018-4-9T14:34Z">
+				今天是2018年7月29日下午14点34分
+			</time>
+		</p>
+		<p id="p3">
+			<time datetime="2018-12-31">
+				新款PSP2掌上游戏机将于今年年底上市
+			</time>
+		</p>
+		<p id="p4">
+			<time datetime="2018-5-1" pubdate="true">
+				该消息发布于2018年5月1日
+			</time>
+		</p>
+</body>
+
+</html>
